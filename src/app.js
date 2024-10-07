@@ -5,7 +5,15 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+const pronombre = ["one", "the", "a", "some", "that"];
+const adjetivo = ["freaky", "stubborn", "logical", "empirical", "handsome"];
+const nombre = ["worm", "eggplant", "mouse", "solution", "team"];
+const dominio = [".com", ".net", ".us", ".es", ".io"];
+
+pronombre.forEach(pron =>
+  adjetivo.forEach(adj =>
+    nombre.forEach(nom =>
+      dominio.forEach(dom => console.log(`${pron}${adj}${nom}${dom}`))
+    )
+  )
+);
